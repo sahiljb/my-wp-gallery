@@ -1,0 +1,31 @@
+body {
+	background: #eee;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*.my-gallery {margin-left: -20px}*/
+.my-gallery a img {	display: block; }
+.my-gallery a {
+	width: 25%;
+	display: inline-block;
+	/*float: left;*/
+	padding-right: 15px;
+	padding-bottom: 15px;
+	/*display: block;*/
+	box-sizing: border-box;
+}
+.my-gallery:hover img {
+	opacity: .65;
+	transform: scale(0.92);
+	transition: all 0.5s ease-out;
+}
+.my-gallery img:hover {
+	opacity: 1;
+	transform: scale(1);
+	transform: rotate(2deg);
+	box-shadow: 0 0 17px rgba(0,0,0,0.7);
+	transition: all 0.5s ease-in-out;
+}
